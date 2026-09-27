@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes arc-dash {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+.animate-radar-sweep {
+  animation: radar-sweep 8s linear infinite;
+  transform-origin: center center;
+}
+
+.animate-arc-dash {
+  stroke-dasharray: 6 6;
+  animation: arc-dash 2.5s linear infinite;
+}
+
+/* Living Avatar Natural Micro-Motion Engine */
+@keyframes avatar-breathe {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-3px) scale(1.012);
+  }
+}
+
+@keyframes avatar-micro-sway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(0.4deg);
+  }
+  66% {
+    transform: rotate(-0.35deg);
+  }
+}
+
+@keyframes avatar-glow-ambient {
+  0%, 100% {
+    opacity: 0.45;
+    filter: drop-shadow(0 0 16px rgba(245, 158, 11, 0.25));
+  }
+  50% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 28px rgba(16, 185, 129, 0.4));
+  }
+}
+
+@keyframes avatar-speaking-ring {
+  0% {
+    transform: scale(0.98);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.98);
+    opacity: 0.8;
+  }
+}
+
+@keyframes eye-blink-cycle {
+  0%, 94%, 98%, 100% {
+    opacity: 0;
+    transform: scaleY(0);
+  }
+  96% {
+    opacity: 0.85;
+    transform: scaleY(1);
+  }
+}
+
+.animate-avatar-breathe {
+  animation: avatar-breathe 4.8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+.animate-avatar-sway {
+  animation: avatar-micro-sway 9s ease-in-out infinite;
+}
+
+.animate-avatar-glow {
+  animation: avatar-glow-ambient 5s ease-in-out infinite;
+}
+
+.animate-avatar-speaking-ring {
+  animation: avatar-speaking-ring 1.4s ease-in-out infinite;
+}
+
+.animate-eye-blink {
+  animation: eye-blink-cycle 4.2s ease-in-out infinite;
+}
+

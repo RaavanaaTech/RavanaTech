@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141416"/>
+      <stop offset="50%" stop-color="#1c1917"/>
+      <stop offset="100%" stop-color="#0a0a0c"/>
+    </linearGradient>
+
+    <radialGradient id="cardGlow" cx="85%" cy="20%" r="65%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#292524" stroke-width="0.75" stroke-opacity="0.4"/>
+    </pattern>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#262626"/>
+      <stop offset="100%" stop-color="#171717"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="630" fill="url(#cardGlow)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <rect width="1200" height="6" fill="#f59e0b"/>
+
+  <g transform="translate(80, 60)">
+    <rect width="64" height="64" rx="16" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
+    
+    <g transform="translate(10, 11)">
+      <path d="M 22 4 L 42 4 L 38 12 L 22 12 Z" fill="#38bdf8"/>
+      <path d="M 25 12 L 33 12 L 33 34 L 25 28 Z" fill="#0284c7"/>
+      <path d="M 4 4 L 14 4 L 10 34 L 4 34 Z" fill="#ffffff"/>
+      <path d="M 10 4 L 24 4 C 28 4 30 7 29 12 C 28 17 24 20 19 20 L 12 20 L 13 12 L 18 12 C 20 12 21 11 21.5 9 C 22 7 20.5 6 18 6 L 9.5 6 Z" fill="#ffffff"/>
+      <path d="M 15 18 L 23 18 L 28 34 L 19 34 L 15 22 Z" fill="#ffffff"/>
+    </g>
+
+    <text x="82" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="0.5">RAVANA TECH</text>
+    <text x="82" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#a1a1aa" letter-spacing="1.5">SRI LANKA &#8226; WEB DESIGN &amp; DEVELOPMENT</text>
+
+    <g transform="translate(760, 4)">
+      <rect width="280" height="48" rx="24" fill="#064e3b" stroke="#059669" stroke-width="1.5"/>
+      <circle cx="28" cy="24" r="7" fill="#10b981"/>
+      <text x="46" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#ecfdf5">+94 78 847 0610 (WhatsApp)</text>
+    </g>
+  </g>
+
+  <g transform="translate(80, 165)">
+    <rect width="470" height="38" rx="10" fill="#27272a" stroke="#f59e0b" stroke-opacity="0.5" stroke-width="1.5"/>
+    <circle cx="22" cy="19" r="5" fill="#f59e0b"/>
+    <text x="36" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#f4f4f5" letter-spacing="1">LIVE CONCEPT DEMO • FOOD &amp; BAKERY</text>
+  </g>
+
+  <text x="80" y="260" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="900" fill="#ffffff" letter-spacing="-1">
+    Crumb &amp; Crust Artisan Bakery
+  </text>
+
+  <text x="80" y="315" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="500" fill="#d4d4d8">
+    Artisan Bakery Menu &amp; Instant WhatsApp Pre-Ordering
+  </text>
+
+  <g transform="translate(80, 370)">
+    <g transform="translate(0, 0)">
+          <rect width="330" height="52" rx="12" fill="url(#pillGrad)" stroke="#3f3f46" stroke-width="1.5"/>
+          <text x="20" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#f4f4f5">✓ 36-Hr Sourdough &amp; Pastries</text>
+        </g>
+    <g transform="translate(350, 0)">
+          <rect width="330" height="52" rx="12" fill="url(#pillGrad)" stroke="#3f3f46" stroke-width="1.5"/>
+          <text x="20" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#f4f4f5">✓ 1-Tap WhatsApp Ordering</text>
+        </g>
+    <g transform="translate(700, 0)">
+          <rect width="330" height="52" rx="12" fill="url(#pillGrad)" stroke="#3f3f46" stroke-width="1.5"/>
+          <text x="20" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#f4f4f5">✓ Daily Freshness Indicators</text>
+        </g>
+  </g>
+
+  <g transform="translate(80, 480)">
+    <rect width="1040" height="76" rx="18" fill="#18181b" stroke="#3f3f46" stroke-width="1.5"/>
+    
+    <rect x="18" y="14" width="220" height="48" rx="12" fill="#f59e0b"/>
+    <text x="128" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#09090b" text-anchor="middle">LIVE PREVIEW &#8594;</text>
+
+    <text x="260" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#e4e4e7">Tap to test the live ordering demo • ravanatech.com/demo/bakery</text>
+    
+    <text x="1010" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700" fill="#71717a" text-anchor="end">LK &#8226; 2026</text>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Ravana Tech — Simple Websites for Small Businesses",
+  "description": "Ravana Tech builds simple, fast, mobile-friendly websites for small businesses in Sri Lanka with direct WhatsApp ordering & booking. Packages from Rs. 18,000.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

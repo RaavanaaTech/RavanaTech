@@ -1,0 +1,59 @@
+{
+  "entities": {
+    "Inquiry": {
+      "title": "Inquiry",
+      "description": "Customer project inquiry submitted through the Ravana Tech website",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Client's personal name",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "businessName": {
+          "type": "string",
+          "description": "Client's business or venture name",
+          "maxLength": 150
+        },
+        "phone": {
+          "type": "string",
+          "description": "Contact phone or WhatsApp number",
+          "maxLength": 50
+        },
+        "need": {
+          "type": "string",
+          "description": "Type of website required",
+          "maxLength": 100
+        },
+        "message": {
+          "type": "string",
+          "description": "Brief description of the project requirements",
+          "maxLength": 2000
+        },
+        "source": {
+          "type": "string",
+          "description": "Submission source",
+          "maxLength": 50
+        },
+        "status": {
+          "type": "string",
+          "description": "Lead status",
+          "enum": ["new", "contacted", "closed"]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when inquiry was recorded"
+        }
+      },
+      "required": ["name", "businessName"]
+    }
+  },
+  "firestore": {
+    "/inquiries/{inquiryId}": {
+      "schema": "Inquiry",
+      "description": "Collection storing customer leads and inquiries"
+    }
+  }
+}

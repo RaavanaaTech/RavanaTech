@@ -1,0 +1,100 @@
+import { BlogPost } from '../types';
+
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: 'why-small-businesses-in-sri-lanka-need-a-website',
+    title: 'Why Every Small Business in Sri Lanka Needs a Website in 2025',
+    category: 'Strategy',
+    readTime: '4 min read',
+    publishedDate: '2025-02-15',
+    author: 'Shanthapriya Silva',
+    excerpt:
+      'Why relying exclusively on Facebook and Instagram leaves Sri Lankan bakeries, salons, and shops vulnerable, and how a simple website builds lasting customer trust.',
+    content: [
+      'For years, the standard advice for Sri Lankan entrepreneurs was simple: "Just create a Facebook page or an Instagram account." While social media is great for initial attention, relying on it as your sole online presence creates three major problems.',
+      'First is search intent. When someone in Colombo, Kandy, or Galle needs a birthday cake, emergency plumbing, a wedding florist, or a salon appointment right now, they do not scroll through Facebook reels — they search on Google. If your business does not have a website, you do not appear on Google search results or Google Maps business listings.',
+      'Second is algorithm instability. Social networks continuously cut organic reach. A Facebook post that reached 2,000 local followers three years ago might now reach 50 people unless you pay for sponsored ads. A website is your own digital property that you own and control completely.',
+      'Third is professional credibility. In Sri Lanka, corporate buyers, event planners, and higher-paying retail customers look for a website before transferring advance payments or placing high-value orders. A clean, mobile-responsive website shows you are an established, dependable business.',
+      'The good news is that you do not need an expensive Rs. 150,000 corporate portal. A simple, fast 1-to-3 page website with your offerings, pricing guidance, and a direct WhatsApp button provides 90% of the commercial value at a fraction of the cost.',
+    ],
+    relatedServiceId: 'business-website',
+  },
+  {
+    slug: 'how-a-bakery-can-get-more-customer-enquiries',
+    title: 'How a Bakery or Home Baker Can Streamline Customer Orders with a Simple Website',
+    category: 'Food & Hospitality',
+    readTime: '5 min read',
+    publishedDate: '2025-02-20',
+    author: 'Shanthapriya Silva',
+    excerpt:
+      'Stop spending hours sending menu photos and typing price lists in Instagram DMs. Here is how a visual menu website saves time and increases sales.',
+    content: [
+      'If you run a bakery, pastry shop, or home baking business in Sri Lanka, you know the daily routine: a potential customer messages on Instagram or WhatsApp asking, "Menu eka ewanna puluwanda?" (Can you send the menu?), followed by "Chocolate cake 1kg price eka kiyada?" (What is the 1kg chocolate cake price?).',
+      'You find yourself repeatedly sending the same PDF flyers or photos from your camera roll, explaining flavors, answering dietary questions, and waiting hours for the customer to reply. By the time they decide, they may have ordered from someone else.',
+      'A simple digital menu website completely transforms this workflow. Instead of sending raw photos, you send one clean link: yourbakery.com.',
+      'The customer opens the website on their smartphone in one second. They see crisp photos of your artisanal loaves, cupcakes, and celebration cakes, clearly categorized with prices and ingredients. When they tap on "Rustic Sourdough" or "Belgian Chocolate Gateau", their WhatsApp opens instantly with the message already written: "Hi, I would like to order the Belgian Chocolate Gateau (Rs. 4,800) for pickup on Saturday."',
+      'You receive structured, ready-to-confirm orders instead of vague inquiries. This saves hours of manual messaging every week and gives your bakery a premium, reliable image.',
+    ],
+    relatedServiceId: 'menu-ordering',
+  },
+  {
+    slug: 'website-vs-facebook-page',
+    title: 'Website vs Facebook Page: What Does Your Sri Lankan Small Business Actually Need?',
+    category: 'Digital Presence',
+    readTime: '5 min read',
+    publishedDate: '2025-03-01',
+    author: 'Shanthapriya Silva',
+    excerpt:
+      'Should you build a website or stick to your Facebook and TikTok pages? An honest comparison of cost, ownership, customer trust, and lead generation.',
+    content: [
+      'A frequent question we hear from local shop owners and freelance professionals is: "I already have 5,000 followers on Facebook and a TikTok account. Why do I need to spend money on a website?"',
+      'The honest answer is that you need both, but they serve completely different purposes in a customer journey.',
+      'Social media (Facebook, Instagram, TikTok) is for Discovery. It is where people browse casually, discover photos of your food, haircuts, or products, and become aware that your business exists.',
+      'A website is for Decision and Action. When a customer is ready to buy, they want to see all your services in one organized place, verify your pricing, read your FAQs, find your opening hours and location, and place an order without navigating through 100 social media posts.',
+      'Furthermore, social media accounts are vulnerable: accounts get hacked, restricted by automated meta policies, or shadow-banned without explanation. A website with your own domain name (e.g., yourbusiness.com or .lk) is an asset that belongs to you.',
+      'The best approach for Sri Lankan businesses is to keep your social pages active for updates and reels, but place your website link in your bio and pinned posts so customers can convert easily into WhatsApp chats.',
+    ],
+    relatedServiceId: 'business-website',
+  },
+  {
+    slug: 'how-much-does-a-website-cost-in-sri-lanka',
+    title: 'How Much Does a Small Business Website Cost in Sri Lanka? (Honest 2025 Guide)',
+    category: 'Pricing & Budget',
+    readTime: '6 min read',
+    publishedDate: '2025-03-10',
+    author: 'Shanthapriya Silva',
+    excerpt:
+      'From Rs. 15,000 freelancer gigs to Rs. 200,000 agency proposals: a transparent breakdown of what website development costs in Sri Lanka and what you should expect.',
+    content: [
+      'Website design pricing in Sri Lanka varies dramatically. If you ask five different developers or agencies, you might receive quotes ranging from Rs. 15,000 to Rs. 250,000 for what appears to be the same project.',
+      'To understand why prices differ, let us break down the standard options available in the local market:',
+      '1. Large Digital Agencies (Rs. 100,000 – Rs. 350,000+): These agencies have high overheads, account managers, project coordinators, and office rents. They are suitable for large banks, hotel chains, and universities, but are unnecessary and overpriced for a small salon, gym, or restaurant.',
+      '2. Inexperienced Freelancers (Rs. 10,000 – Rs. 15,000): Often students or hobbyists who install bloated WordPress templates. These websites frequently break, load very slowly on mobile networks, and the developer often disappears when you need updates or domain renewals.',
+      '3. Business-Focused Specialists (Rs. 18,000 – Rs. 45,000): This is where Ravana Tech operates. We build lightweight, custom-crafted, mobile-first websites using modern cloud hosting (like Firebase). There are no heavy server costs, no slow database bloat, and the code is optimized for fast loading on Dialog and Mobitel smartphone networks.',
+      'Recurring Costs: Besides design, every website requires a domain name (approx. Rs. 3,500 – Rs. 4,500/year for .com or .lk) and hosting. By utilizing modern static cloud hosting, we help small businesses avoid monthly hosting charges altogether for standard traffic levels.',
+    ],
+    relatedServiceId: 'business-website',
+  },
+  {
+    slug: 'what-to-put-on-a-small-business-website',
+    title: 'What Should You Put on a Small Business Website? (The No-Nonsense Checklist)',
+    category: 'Content Guide',
+    readTime: '4 min read',
+    publishedDate: '2025-03-15',
+    author: 'Shanthapriya Silva',
+    excerpt:
+      'The 7 essential items every small business website needs to turn casual visitors into paying customers without clutter or confusion.',
+    content: [
+      'Many business owners delay building a website because they believe they need 20 pages of corporate text, mission statements, and complicated slide shows. In reality, modern customers want quick, clear answers to four basic questions: Who are you? What do you sell? How much is it? How do I contact you?',
+      'Here are the 7 essential elements you should include on your website:',
+      '1. Clear Headline Above the Fold: State exactly what you do and where you operate. For example: "Fresh Artisan Sourdough & Custom Celebration Cakes in Negombo."',
+      '2. Visual Menu or Services List: Clear photos and descriptions of your core offerings. If you are a salon, list your haircuts, treatments, and duration.',
+      '3. Transparent Price Guidance: Even if custom work varies, providing "Starting from Rs. X" sets customer expectations and filters out non-serious inquiries.',
+      '4. One-Tap WhatsApp Button: In Sri Lanka, WhatsApp is the undisputed standard for business communication. Make sure your WhatsApp link opens with a pre-filled greeting.',
+      '5. Location, Hours & Google Maps Embed: Make it effortless for walk-in customers to find your shop or salon with one tap on Google Maps.',
+      '6. Honest Proof of Work: Real photos of your food, flowers, or completed projects. Never use fake customer reviews or stock photos of foreign storefronts.',
+      '7. Frequently Asked Questions (FAQ): Answer the 3 to 5 most common questions your customers ask every day regarding delivery, payment methods, and advance notices.',
+    ],
+    relatedServiceId: 'product-showcase',
+  },
+];

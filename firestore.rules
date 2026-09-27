@@ -1,0 +1,46 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper to check if requester is an authenticated user
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Inquiries collection
+    match /inquiries/{inquiryId} {
+      // Public visitors can only create a strictly validated inquiry
+      allow create: if request.resource.data.name is string
+                    && request.resource.data.name.size() >= 2
+                    && request.resource.data.name.size() <= 100
+                    && request.resource.data.phone is string
+                    && request.resource.data.phone.size() >= 6
+                    && request.resource.data.phone.size() <= 30
+                    && request.resource.data.businessName is string
+                    && request.resource.data.businessName.size() <= 120
+                    && request.resource.data.need is string
+                    && request.resource.data.need.size() <= 200
+                    && (!('status' in request.resource.data) || request.resource.data.status in ['new', 'contacted', 'closed']);
+
+      // Only authenticated admin can read, list, update or delete inquiries
+      allow read, update, delete: if isAuthenticated();
+    }
+
+    // Blog articles (CMS managed)
+    match /articles/{articleId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    // Projects (CMS managed)
+    match /projects/{projectId} {
+      allow read: if true;
+      allow write: if isAuthenticated();
+    }
+
+    // Catch-all deny for any other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
