@@ -15,9 +15,32 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+function getPort(): number {
+  const portArgIdx = process.argv.indexOf('--port');
+  if (portArgIdx !== -1 && process.argv[portArgIdx + 1]) {
+    const val = Number(process.argv[portArgIdx + 1]);
+    if (!isNaN(val)) return val;
+  }
+  const pArgIdx = process.argv.indexOf('-p');
+  if (pArgIdx !== -1 && process.argv[pArgIdx + 1]) {
+    const val = Number(process.argv[pArgIdx + 1]);
+    if (!isNaN(val)) return val;
+  }
+  return Number(process.env.PORT) || 3000;
+}
+
+function getHost(): string {
+  const hostArgIdx = process.argv.indexOf('--host');
+  if (hostArgIdx !== -1 && process.argv[hostArgIdx + 1]) {
+    return process.argv[hostArgIdx + 1];
+  }
+  return process.env.HOST || '0.0.0.0';
+}
+
 async function startServer() {
   const app = express();
-  const PORT = Number(process.env.PORT) || 3000;
+  const PORT = getPort();
+  const HOST = getHost();
 
   app.use(express.json());
 
@@ -118,8 +141,8 @@ async function startServer() {
     app.use(vite.middlewares);
   }
 
-  app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server listening on http://0.0.0.0:${PORT}`);
+  app.listen(PORT, HOST, () => {
+    console.log(`Server listening on http://${HOST}:${PORT}`);
   });
 }
 
